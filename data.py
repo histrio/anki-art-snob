@@ -1,38 +1,68 @@
+import csv
 import re
+
+from urllib.parse import urljoin
 
 import requests
 import requests_cache
 
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup
 
-
+# Enable caching to reduce network calls for previously made requests
 requests_cache.install_cache('cache')
 
-
 def iter_next_page(url):
-    w_resp = requests.get('https://ru.wikipedia.org/' + url, stream=False)
-    w_soup = BeautifulSoup(w_resp.content, "lxml")
-    yield w_soup
-    next_url = w_soup.find('a', text='Следующая страница')
-    if next_url:
-        yield from iter_next_page(next_url.get('href'))
+    """
+    Generator to iterate over pages starting from a given URL.
+    Yields BeautifulSoup objects for each page with a 'Next page' link.
+    """
+    while url:
+        response = requests.get(url)
+        if response.status_code != 200:
+            break  # Exit if there's an error loading the page
+        soup = BeautifulSoup(response.content, "lxml")
+        yield soup
+        next_link = soup.find('a', text='Следующая страница')
+        url = urljoin(url, next_link.get('href')) if next_link else None
 
 def art_list():
-    URL = '/w/index.php?title=%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83'
-    RE = re.compile(r'^/wiki/(?!%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:|%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:|%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:|%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:|%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:|%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)')
-    for soup in iter_next_page(URL):
+    """
+    Generator that yields URLs of Wikipedia articles in a specific category.
+    Filters out non-article links using a pre-compiled regular expression.
+    """
+    base_url = 'https://ru.wikipedia.org'
+    start_path = '/w/index.php?title=Категория:Картины_по_алфавиту'
+    full_url = urljoin(base_url, start_path)
+    exclude_pattern = re.compile(r'^/wiki/(?!%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:|%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:|%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:|%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:|%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:|%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)')
+    
+    for soup in iter_next_page(full_url):
         for li in soup.find_all('li'):
-            a = li.find('a', href=RE)
+            a = li.find('a', href=exclude_pattern)
             if a:
-                yield 'https://ru.wikipedia.org/' + a.get('href')
-
+                yield urljoin(base_url, a.get('href'))
 
 def main():
-    for link in art_list():
-        print(link)
-    return 0
-
+    """
+    Main function to fetch data and save it to a CSV file.
+    """
+    # Open (or create) a CSV file to write the data
+    with open('wikipedia_art_links.csv', mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        # Write the header row
+        writer.writerow(['Image URL', 'Description'])
+        
+        for link in art_list():
+            print(link)
+            w_resp = requests.get(link, stream=False)
+            w_soup = BeautifulSoup(w_resp.content, "lxml")
+            box = w_soup.find('table', {'class': 'infobox'})
+            if box:
+                img_tag = box.find('img')
+                img_url = 'https:' + img_tag['src'] if img_tag else None
+                desc = ' '.join(box.text.split())
+                # Write the extracted data to the CSV file
+                writer.writerow([img_url, desc])
+                                              
 
 if __name__ == "__main__":
-    import sys
-    sys.exit(main())
+    main()
