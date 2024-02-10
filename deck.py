@@ -156,8 +156,15 @@ def generate_json_from_csv(csv_file_path, json_file_path):
     }
 
     # Added to generate consistent crowdanki_uuid for deck configurations and note models
-    json_data["deck_configurations"][0]["crowdanki_uuid"] = str(uuid.uuid5(NAMESPACE, "deck_config_default"))
-    json_data["note_models"][0]["crowdanki_uuid"] = str(uuid.uuid5(NAMESPACE, "note_model_art_snob"))
+    json_data["crowdanki_uuid"] = str(uuid.uuid5(NAMESPACE, "deck"))
+
+    deck_config_uuid = str(uuid.uuid5(NAMESPACE, "deck_config_default"))
+    json_data["deck_config_uuid"] = deck_config_uuid
+    json_data["deck_configurations"][0]["crowdanki_uuid"] = deck_config_uuid
+
+
+    note_model_uuid = str(uuid.uuid5(NAMESPACE, "note_model_art_snob"))
+    json_data["note_models"][0]["crowdanki_uuid"] = note_model_uuid
 
     # Read the CSV file and populate the "notes" list
     with open(csv_file_path, mode='r', encoding='utf-8') as file:
@@ -173,7 +180,7 @@ def generate_json_from_csv(csv_file_path, json_file_path):
                 "__type__": "Note",
                 "fields": [image_url, description],
                 "guid": note_uuid[:10],  # Use the first 10 characters of the UUID
-                "note_model_uuid": json_data["note_models"][0]["crowdanki_uuid"],
+                "note_model_uuid": note_model_uuid,
                 "tags": []
             }
             json_data["notes"].append(note)
