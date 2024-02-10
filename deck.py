@@ -1,8 +1,10 @@
+import uuid
 import os
 import csv
 import json
 import zipfile
-from uuid import uuid4
+
+NAMESPACE = uuid.UUID('1b671a64-40d5-491e-99b0-da01ff1f3341')  # Arbitrary but constant namespace UUID
 
 def generate_json_from_csv(csv_file_path, json_file_path):
     # Template for the JSON structure
@@ -153,16 +155,24 @@ def generate_json_from_csv(csv_file_path, json_file_path):
         "reviewLimitToday": None
     }
 
+    # Added to generate consistent crowdanki_uuid for deck configurations and note models
+    json_data["deck_configurations"][0]["crowdanki_uuid"] = str(uuid.uuid5(NAMESPACE, "deck_config_default"))
+    json_data["note_models"][0]["crowdanki_uuid"] = str(uuid.uuid5(NAMESPACE, "note_model_art_snob"))
+
     # Read the CSV file and populate the "notes" list
     with open(csv_file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
         next(reader)  # Skip the header row
         for row in reader:
+            # Assuming the first column of the CSV (article URL) is unique for each note
+
             image_url, description = row
+            unique_identifier = image_url  # Use the image URL as the unique identifier
+            note_uuid = str(uuid.uuid5(NAMESPACE, unique_identifier))
             note = {
                 "__type__": "Note",
                 "fields": [image_url, description],
-                "guid": str(uuid4())[:10],  # Generate a pseudo-guid
+                "guid": note_uuid[:10],  # Use the first 10 characters of the UUID
                 "note_model_uuid": json_data["note_models"][0]["crowdanki_uuid"],
                 "tags": []
             }
@@ -183,7 +193,7 @@ def zip_json_as_folder(json_file_path, zip_file_path):
 
 # Specify the paths for the CSV input and JSON output
 csv_file_path = 'wikipedia_art_links.csv'
-json_file_path = 'artsnob.json'
+json_file_path = 'deck.json'
 #zip_file_path = 'ArtSnobRu.zip'
 
 generate_json_from_csv(csv_file_path, json_file_path)
