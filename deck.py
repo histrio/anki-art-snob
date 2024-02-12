@@ -107,9 +107,39 @@ def generate_json_from_csv(csv_file_path, json_file_path):
                         "description": "",
                         "excludeFromSearch": False,
                         "font": "Arial",
+                        "id": 8123297495127658195,
+                        "name": "Author",
+                        "ord": 1,
+                        "plainText": False,
+                        "preventDeletion": False,
+                        "rtl": False,
+                        "size": 20,
+                        "sticky": False,
+                        "tag": None
+                    },
+                    {
+                        "collapsed": False,
+                        "description": "",
+                        "excludeFromSearch": False,
+                        "font": "Arial",
+                        "id": 8123297495127658195,
+                        "name": "Name",
+                        "ord": 1,
+                        "plainText": False,
+                        "preventDeletion": False,
+                        "rtl": False,
+                        "size": 20,
+                        "sticky": False,
+                        "tag": None
+                    },
+                    {
+                        "collapsed": False,
+                        "description": "",
+                        "excludeFromSearch": False,
+                        "font": "Arial",
                         "id": 8123297495127658194,
                         "name": "Description",
-                        "ord": 1,
+                        "ord": 3,
                         "plainText": False,
                         "preventDeletion": False,
                         "rtl": False,
@@ -135,7 +165,7 @@ def generate_json_from_csv(csv_file_path, json_file_path):
                 "sortf": 0,
                 "tmpls": [
                     {
-                        "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Description}}",
+                        "afmt": "{{FrontSide}} <hr id=answer> <b>{{Name}}</b> </br> {{Author}} </br> <i>{{Description}}</i>",
                         "bafmt": "",
                         "bfont": "",
                         "bqfmt": "",
@@ -172,13 +202,12 @@ def generate_json_from_csv(csv_file_path, json_file_path):
         next(reader)  # Skip the header row
         for row in reader:
             # Assuming the first column of the CSV (article URL) is unique for each note
-
-            image_url, description = row
+            image_url, author, name, description = row
             unique_identifier = image_url  # Use the image URL as the unique identifier
             note_uuid = str(uuid.uuid5(NAMESPACE, unique_identifier))
             note = {
                 "__type__": "Note",
-                "fields": [image_url, description],
+                "fields": [image_url, author, name, description],
                 "guid": note_uuid[:10],  # Use the first 10 characters of the UUID
                 "note_model_uuid": note_model_uuid,
                 "tags": []
