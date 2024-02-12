@@ -1,3 +1,10 @@
+## 0.3.0 (2024-02-12)
+
+### Feat
+
+- **deck**: new author and name fields
+- **tools**: separate author and name from description into new fields
+
 ## 0.2.1 (2024-02-10)
 
 ### Fix
