@@ -1,3 +1,10 @@
+## 0.3.1 (2024-02-12)
+
+### Fix
+
+- **deck**: updated decription
+- **tools**: updated description
+
 ## 0.3.0 (2024-02-12)
 
 ### Feat
