@@ -6162,18 +6162,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Въезд Генриха Валуа в Краков. 1853",
-                "Wjazd Henryka Walezego do Krakowa",
-                "холст, масло. 40 × 32 см Национальный музей"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Henryk_Pobozny.jpg/350px-Henryk_Pobozny.jpg",
                 "Ян Матейко",
                 "Выезд Генриха Набожного из Легницы. 1865",
@@ -6726,18 +6714,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Голова быка, изображающая голову ягнёнка. 1966",
-                "брюки, клей, масло, дерево",
-                "Музей Зиммерли, США"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Giuseppe_Arcimboldo%2C_Reversible_Head_with_Basket_of_Fruit%2C_c._1590%2C_oil_on_panel.jpg/300px-Giuseppe_Arcimboldo%2C_Reversible_Head_with_Basket_of_Fruit%2C_c._1590%2C_oil_on_panel.jpg",
                 "Джузеппе Арчимбольдо",
                 "Голова и корзина с фруктами. Ок. 1590",
@@ -6828,18 +6804,6 @@
                 "Национальная галерея Канады (инв. 30502)"
             ],
             "guid": "ea3d4d0d-b",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Голубая обнажённая. 1907",
-                "Балтиморский художественный музей,",
-                "(инв. 1950.228[1])"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -9714,18 +9678,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Женщины Апшерона. 1967",
-                "Холст, масло. 265 × 265 см",
-                "Государственная Третьяковская галерея, Москва"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Claude_Monet_024.jpg/350px-Claude_Monet_024.jpg",
                 "Клод Моне",
                 "Женщины в саду. 1866",
@@ -10986,18 +10938,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Император Франц Иосиф перед саркофагом короля Яна III Собеского в крипте Святого Леонарда в Вавельском соборе. 1881",
-                "Cesarz Franciszek Józef przed sarkofagiem króla Jana III Sobieskiego w Krypcie Św. Leonarda w Katedrze Wawelskiej",
-                "бумага, акварель. 39 × 57 см Национальный музей, Краков"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Qianlong_Emperor_in_Ceremonial_Armour_on_Horseback.jpg/220px-The_Qianlong_Emperor_in_Ceremonial_Armour_on_Horseback.jpg",
                 "Джузеппе Кастильоне",
                 "Император Цяньлун в церемониальных доспехах на коне. 1739 или 1758",
@@ -11184,18 +11124,6 @@
                 "нидерл. De verzoeking van de H. Antonius[2] Дерево, масло. 73 × 52,5 см Прадо, Мадрид (инв. P002049[1]) Медиафайлы на Викискладе"
             ],
             "guid": "41158b11-b",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Искушение святого Антония. 1946",
-                "исп. La tentación de San Antonio",
-                "Холст, масло. 90 × 119,5 см Королевский музей изящных искусств Бельгии, Брюссель (инв. 7223)"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -12420,18 +12348,6 @@
                 "нидерл. Boomwortels Холст, масло. 50 × 100 см Музей Винсента Ван Гога, Амстердам (инв. s0195V1962) Медиафайлы на Викискладе"
             ],
             "guid": "23e18890-7",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Коровы. 1890-е",
-                "Холст, масло. 17,9 × 33,2 см",
-                "Частная коллекция"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -13812,18 +13728,6 @@
                 "англ. Lilith[1] Холст, масло. 194 × 104 см Southport Arts Centre[d] (инв. BOOAG:188) Медиафайлы на Викискладе"
             ],
             "guid": "d73088ac-0",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Лирический цикл. 1928",
-                "Холст, масло",
-                ""
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -15852,18 +15756,6 @@
                 "Mariana in the South холст, масло. 114 × 74 см Дом-музей Лейтона, Лондон, Великобритания"
             ],
             "guid": "f42bd3cd-9",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Марина Мнишек под Астраханью. 1884",
-                "Maryna Mniszchówna pod Astrachaniem",
-                "доска, масло. 62 × 80 см Музей искусства, Лодзь"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -18342,18 +18234,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Незримый человек. 1932[1]",
-                "исп. El hombre invisible",
-                "Холст, масло. 140 × 81 см Центр искусств королевы Софии[1] (инв. AS11142[1])"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kramskoy_Portrait_of_a_Woman.jpg/325px-Kramskoy_Portrait_of_a_Woman.jpg",
                 "Иван Крамской",
                 "Неизвестная. 1883",
@@ -19134,18 +19014,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Одалиска в красных шароварах. 1925",
-                "холст, масло",
-                "Музей современного искусства Каракаса, Венесуэла"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ingres_Odalisque_esclave_Fogg_Art.jpeg/350px-Ingres_Odalisque_esclave_Fogg_Art.jpeg",
                 "Жан-Огюст-Доминик Энгр",
                 "Одалиска и рабыня. 1839",
@@ -19458,18 +19326,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Осенний ритм (Номер 30). 1950",
-                "Autumn Rhythm (Number 30)",
-                "266,7 × 525,8 см Метрополитен-музей, Нью-йорк (инв. 57.92)"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kuindzhi_The_autumn_slush.jpg/350px-Kuindzhi_The_autumn_slush.jpg",
                 "Архип Куинджи",
                 "Осенняя распутица. 1870",
@@ -19500,18 +19356,6 @@
                 "L’Automne, Méry Laurent холст, масло. 73 × 51 см Музей изобразительного искусства Нанси, Нанси, Франция (инв. 1071) Медиафайлы на Викискладе"
             ],
             "guid": "671c6deb-a",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Осень. 1890-е",
-                "Холст, масло. 47 × 66,5 см",
-                "Дальневосточный художественный музей, Хабаровск (инв. Ж-159)"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -20730,18 +20574,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Пенисный пейзаж. 1973",
-                "неизвестно",
-                ""
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Edvard_Munch_-_Ashes_%281895%29.jpg/300px-Edvard_Munch_-_Ashes_%281895%29.jpg",
                 "Эдвард Мунк",
                 "Пепел. 1894",
@@ -21480,18 +21312,6 @@
                 "фр. Le Radeau de La Méduse Холст, масло. 491 × 716 см Лувр, Париж (инв. INV 4884) Медиафайлы на Викискладе"
             ],
             "guid": "1b3e3712-c",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Плоть на камнях. 1926",
-                "Дерево. 41 × 27 см",
-                "Музей Сальвадора Дали, Флорида (инв. 1983.4[1])"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -27990,18 +27810,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Портрет скульптора И. В. Крестовского. 1960",
-                "Холст, масло. 100 × 75 см",
-                "частное собрание, Россия"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Botticelli%2C_Sandro_-_Portrait_of_a_Lady_known_as_Smeralda_Bandinelli_-_Google_Art_Project.jpg/284px-Botticelli%2C_Sandro_-_Portrait_of_a_Lady_known_as_Smeralda_Bandinelli_-_Google_Art_Project.jpg",
                 "Сандро Боттичелли",
                 "Портрет Смеральды Брандини. Около 1475",
@@ -29706,18 +29514,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Присяга Богдана Хмельницкого на подданство России. 1886",
-                "Przysięga Bohdana Chmielnickiego na poddaństwo Rosji",
-                "холст, масло. 58 × 41,5 см частная коллекция"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Jan_Matejko_-_Ho%C5%82d_Bohdana_Chmielnickiego_pod_Zborowem_1859.jpg/328px-Jan_Matejko_-_Ho%C5%82d_Bohdana_Chmielnickiego_pod_Zborowem_1859.jpg",
                 "Ян Матейко",
                 "Присяга Богдана Хмельницкого под Зборовом. 1859",
@@ -30528,18 +30324,6 @@
                 "нидерл. De nestenrover дерево, масло. 59 × 68 см Музей истории искусств, Вена (инв. GG_1020[1]) Медиафайлы на Викискладе"
             ],
             "guid": "bece34fa-f",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Разрешение на брак. 1955",
-                "англ. The Marriage License",
-                "Холст, масло. 116 × 108 см Музей Нормана Роквелла,"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -33402,18 +33186,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Синие столбы. 1952",
-                "Blue Poles",
-                "212,1 × 488,9 см Национальная галерея Австралии, Канберра (инв. NGA 1974.264 и NGA 74.264[1])"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sir_Arthur_Ernest_Streeton_%281867-1943%29_135_%2840739707072%29.jpg/250px-Sir_Arthur_Ernest_Streeton_%281867-1943%29_135_%2840739707072%29.jpg",
                 "Артур Стритон",
                 "Синий Тихий океан. 1890",
@@ -34038,18 +33810,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Смеющийся обнажённый ребёнок. 1963",
-                "англ. Naked Child Laughing",
-                "холст, масло"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Smolnyanki_Levitskogo.jpg/400px-Smolnyanki_Levitskogo.jpg",
                 "Дмитрий Левицкий",
                 "Смолянки. 1772—76",
@@ -34236,18 +33996,6 @@
                 "Холст, масло Медиафайлы на Викискладе"
             ],
             "guid": "cf3e9961-1",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Собеский захватывает знамя. 1880",
-                "Sobieski zdobywa chorągiew",
-                "бумага, акварель. 47,5 × 36,5 см частная коллекция"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -34584,18 +34332,6 @@
                 "англ. Flaying of Marsyas[1] Холст (переведена с дерева), масло. 48 × 119 см Государственный Эрмитаж, Санкт-Петербург (инв. ГЭ-250)"
             ],
             "guid": "51f35542-1",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "София Щецинская в лагере Казимира Ягеллончика. 1881",
-                "Księżna Zofia Szczecińska w obozie Kazimierza Jagiellończyka",
-                "холст, масло Национальный музей, Варшава"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -35100,18 +34836,6 @@
                 "польск. Stefan Batory pod Pskowem холст, масло. 322 × 545 см Королевский замок в Варшаве, Варшава Медиафайлы на Викискладе"
             ],
             "guid": "7b045819-b",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Стигматы Святого Франциска. 1500",
-                "итал. Stigmate di san Francesco",
-                "дерево, темпера Сан-Пьетро-ин-Монторио, Рим, Италия"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -36402,18 +36126,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Тринадцать великих актёров поздней Цин. XX век",
-                "кит. 同光十三絕",
-                "Дом-музей Мэй Ланьфана, Пекин"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/%D0%A2%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D1%85_%E2%80%94_%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82_1972_%28%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%29.jpg/177px-%D0%A2%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D1%85_%E2%80%94_%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82_1972_%28%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%29.jpg",
                 "",
                 "Фрэнсис Бэкон[1]",
@@ -37224,18 +36936,6 @@
                 "The Favourites of the Emperor Honorius холст, масло. 117 × 202 см Художественная галерея Южной Австралии, Аделаида (инв. 0.52) Медиафайлы на Викискладе"
             ],
             "guid": "8936ad6e-c",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Фальшивое зеркало. 1929[3][4] и 1928[2]",
-                "англ. Le Faux Miroir (The False Mirror) 7yes[2]",
-                "Музей современного искусства[1][4] (инв. 133.1936[1][4])"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -38574,18 +38274,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Читающая женщина. 1895",
-                "La Liseuse",
-                "Холст, масло. 61,5 × 48 см Центр Помпиду, Париж (инв. ГЭ-9673)"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Magdalen_Reading_-_Rogier_van_der_Weyden.jpg/330px-The_Magdalen_Reading_-_Rogier_van_der_Weyden.jpg",
                 "Рогир ван дер Вейден",
                 "Читающая Магдалина. Ок. 1435—1438",
@@ -38664,18 +38352,6 @@
                 "Холст, масло. 233 × 171 см Государственная Третьяковская галерея, Москва Медиафайлы на Викискладе"
             ],
             "guid": "4768a9c8-4",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "«Чу!», — сказала королева Кэт». 1849—1851",
-                "«Hist!» Said Kate the Queen",
-                "Холст, масло. 32,5 × 60 см Итонский колледж, Итон"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -39282,36 +38958,12 @@
         {
             "__type__": "Note",
             "fields": [
-                "",
-                "Этель Скалл 36 раз. 1963",
-                "англ. Ethel Scull 36 Times[1]",
-                "Метрополитен-музей (инв. 2001.614a-jj)"
-            ],
-            "guid": "80284680-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/Moyseenko_E._Barak_1962.jpg/350px-Moyseenko_E._Barak_1962.jpg",
                 "Евсей Моисеенко",
                 "Барак. 1962",
                 "Холст, масло. 60 × 40 см Государственный музей истории Санкт-Петербурга, Санкт-Петербург"
             ],
             "guid": "78e45ab1-3",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Этюд для автопортрета — триптих. 1986",
-                "галерея Мальборо",
-                ""
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
@@ -39648,18 +39300,6 @@
                 "Jan Zamoyski idący obwieścić wyrok śmierci Zborowskiemu бумага, акварель. 32 × 23,5 см Дом Яна Матейко, Краков (инв. MNK IX-38)"
             ],
             "guid": "3b2472d9-7",
-            "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
-            "tags": []
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "",
-                "Ян Казимир в Белянах. 1861",
-                "Jan Kazimierz na Bielanach",
-                "холст, масло. 140 × 197 см частная коллекция"
-            ],
-            "guid": "80284680-3",
             "note_model_uuid": "6c9499e8-d6ce-55f9-a4a5-e66ccf8b1b10",
             "tags": []
         },
