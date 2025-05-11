@@ -13,6 +13,11 @@ from bs4 import BeautifulSoup
 
 requests_cache.install_cache("cache")
 
+DESCRIPTION = """
+    <a href="https://github.com/histrio/anki-art-snob/"><b>FULL DESCRIPTION</b></a> |\n<a href="https://github.com/histrio/anki-art-snob/blob/master/CHANGELOG.md"><b>RELEASE NOTES</b></a> \n\n<b>Art Snob</b> features:\n\n- the world\'s most famous <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83"><b>3k+ paintings</b></a> \n\nThis deck is <a href="https://github.com/histrio/anki-art-snob"><b>maintained on GitHub</b></a>. If you spot a mistake, have a suggestion or want to help, please don\'t hesitate to <a href="https://github.com/histrio/anki-art-snob/issues">open an issue</a>. Want to <b>stay informed of new releases</b>? Watch the GitHub repository or subscribe to the <a href="https://github.com/histrio/anki-art-snob/releases.atom">releases feed</a>!
+"""
+
+
 NAMESPACE = uuid.UUID(
     "1b671a64-40d5-491e-99b0-da01ff1f3341"
 )  # Arbitrary but constant namespace UUID
@@ -20,15 +25,15 @@ NAMESPACE = uuid.UUID(
 TEMPLATE = {
     "__type__": "Deck",
     "children": [],
-    "crowdanki_uuid": "3c9b598a-c72d-11ee-bdb4-b7b23cdf7638",
-    "deck_config_uuid": "eed25086-d07a-11ed-ab48-103d1c4cae55",
+    "crowdanki_uuid": None,
+    "deck_config_uuid": None,
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
             "answerAction": 0,
             "autoplay": True,
             "buryInterdayLearning": False,
-            "crowdanki_uuid": "eed25086-d07a-11ed-ab48-103d1c4cae55",
+            "crowdanki_uuid": None,
             "desiredRetention": 0.9,
             "dyn": False,
             "fsrsWeights": [],
@@ -73,7 +78,7 @@ TEMPLATE = {
             "weightSearch": "",
         }
     ],
-    "desc": '<a href="https://github.com/histrio/anki-art-snob/"><b>FULL DESCRIPTION</b></a> |\n<a href="https://github.com/histrio/anki-art-snob/blob/master/CHANGELOG.md"><b>RELEASE NOTES</b></a> \n\n<b>Art Snob</b> features:\n\n- the world\'s most famous <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83"><b>3k+ paintings</b></a> \n\nThis deck is <a href="https://github.com/histrio/anki-art-snob"><b>maintained on GitHub</b></a>. If you spot a mistake, have a suggestion or want to help, please don\'t hesitate to <a href="https://github.com/histrio/anki-art-snob/issues">open an issue</a>. Want to <b>stay informed of new releases</b>? Watch the GitHub repository or subscribe to the <a href="https://github.com/histrio/anki-art-snob/releases.atom">releases feed</a>!\n',
+    "desc": DESCRIPTION,
     "dyn": 0,
     "extendNew": 0,
     "extendRev": 0,
@@ -84,7 +89,7 @@ TEMPLATE = {
     "note_models": [
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "3c9b8108-c72d-11ee-bdb4-b7b23cdf7638",
+            "crowdanki_uuid": None,
             "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
             "flds": [
                 {
