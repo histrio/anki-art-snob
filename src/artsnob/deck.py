@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 
-requests_cache.install_cache("cache")
+requests_cache.install_cache("cache", expire_after=172800)
 
 DESCRIPTION = """
     <a href="https://github.com/histrio/anki-art-snob/"><b>FULL DESCRIPTION</b></a> |\n<a href="https://github.com/histrio/anki-art-snob/blob/master/CHANGELOG.md"><b>RELEASE NOTES</b></a> \n\n<b>Art Snob</b> features:\n\n- the world\'s most famous <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D1%8B_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83"><b>3k+ paintings</b></a> \n\nThis deck is <a href="https://github.com/histrio/anki-art-snob"><b>maintained on GitHub</b></a>. If you spot a mistake, have a suggestion or want to help, please don\'t hesitate to <a href="https://github.com/histrio/anki-art-snob/issues">open an issue</a>. Want to <b>stay informed of new releases</b>? Watch the GitHub repository or subscribe to the <a href="https://github.com/histrio/anki-art-snob/releases.atom">releases feed</a>!
@@ -90,7 +90,96 @@ TEMPLATE = {
         {
             "__type__": "NoteModel",
             "crowdanki_uuid": None,
-            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "css": """
+                /* --- General Card Styling --- */
+                .card {
+                  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font stack */
+                  font-size: 18px; /* Adjust base font size as needed */
+                  line-height: 1.6; /* Spacing between lines of text */
+                  text-align: left; /* Or 'center' if you prefer */
+                  color: #333333; /* Dark grey for text - easier on eyes than pure black */
+                  background-color: #ffffff; /* White card background */
+                  padding: 25px; /* Space inside the card borders */
+                  border-radius: 10px; /* Rounded corners */
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a "lifted" effect */
+                }
+
+                /* --- Image Styling (for images like on your front template) --- */
+                .card img {
+                  display: block;  /* Allows for centering with margins */
+                  max-width: 100%; /* Ensures the image is never wider than the card's content area */
+                  height: auto;    /* Maintains the image's original aspect ratio, preventing distortion */
+                  margin-left: auto; /* These two lines center the image horizontally */
+                  margin-right: auto;
+                  margin-bottom: 20px; /* Adds some space below the image on the front.
+                                           On the back, this creates space between the image (from {{FrontSide}})
+                                           and the horizontal separator line. */
+                  border-radius: 6px; /* Optional: gives the image slightly rounded corners */
+                  /* Uncomment and adjust the line below if you want to limit how tall images can be: */
+                  /* max-height: 400px; */
+                }
+
+                /* --- Separator Line (between FrontSide and Answer) --- */
+                hr#answerSeparator {
+                  border: none; /* Remove default browser border */
+                  height: 1px; /* Thickness of the line */
+                  background-color: #dddddd; /* Light grey color for the line */
+                  margin-top: 20px; /* Space above the line */
+                  margin-bottom: 20px; /* Space below the line */
+                }
+
+                /* --- Container for Answer Fields --- */
+                .answer-container {
+                  /* You can add specific styling for the whole answer block here if needed */
+                  /* For example: border-left: 3px solid #5cb85c; padding-left: 15px; */
+                }
+
+                /* --- Styling for the 'Name' Field --- */
+                .field-name {
+                  font-size: 1.6em; /* Makes it about 29px if base is 18px */
+                  font-weight: bold; /* Makes the text bold */
+                  color: #2a7ae2; /* A pleasant blue color */
+                  margin-bottom: 12px; /* Space below the Name */
+                }
+
+                /* --- Styling for the 'Author' Field --- */
+                .field-author {
+                  font-size: 1.1em; /* About 20px */
+                  color: #555555; /* Medium grey */
+                  margin-bottom: 8px; /* Space below the Author */
+                }
+
+                /* --- Styling for the 'Description' Field --- */
+                .field-description {
+                  font-size: 1em; /* About 18px (base size) */
+                  font-style: italic; /* Makes the text italic */
+                  color: #444444; /* Slightly darker grey */
+                  line-height: 1.7; /* More line spacing for potentially longer descriptions */
+                }
+
+                /* --- Night Mode Styling (Optional - Anki applies .nightMode class automatically) --- */
+                .nightMode .card {
+                  background-color: #2f3d52; /* Dark background for night mode */
+                  color: #e0e0e0; /* Light text color */
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Adjusted shadow for dark background */
+                }
+
+                .nightMode hr#answerSeparator {
+                  background-color: #506680; /* Darker separator for night mode */
+                }
+
+                .nightMode .field-name {
+                  color: #82b1ff; /* Lighter, vivid blue for night mode */
+                }
+
+                .nightMode .field-author {
+                  color: #b0bec5; /* Lighter grey */
+                }
+
+                .nightMode .field-description {
+                  color: #cfd8dc; /* Light grey for description */
+                }
+            """,
             "flds": [
                 {
                     "collapsed": False,
@@ -152,6 +241,21 @@ TEMPLATE = {
                     "sticky": False,
                     "tag": None,
                 },
+                {
+                    "collapsed": False,
+                    "description": "",
+                    "excludeFromSearch": False,
+                    "font": "Arial",
+                    "id": 8123297495127658193,
+                    "name": "Link",
+                    "ord": 4,
+                    "plainText": False,
+                    "preventDeletion": False,
+                    "rtl": False,
+                    "size": 20,
+                    "sticky": False,
+                    "tag": None,
+                },
             ],
             "latexPost": "\\end{document}",
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
@@ -162,7 +266,15 @@ TEMPLATE = {
             "sortf": 0,
             "tmpls": [
                 {
-                    "afmt": "{{FrontSide}} <hr id=answer> <b>{{Name}}</b> </br> {{Author}} </br> <i>{{Description}}</i>",
+                    "afmt": """
+                        {{FrontSide}}
+                        <hr id="answerSeparator">
+                        <div class="answer-container">
+                          <div class="field-name"><a href="{{Link}}" class="name-link" target="_blank" rel="noopener noreferrer">{{Name}}</a></div>
+                          <div class="field-author">{{Author}}</div>
+                          <div class="field-description">{{Description}}</div>
+                        </div>
+                    """,
                     "bafmt": "",
                     "bfont": "",
                     "bqfmt": "",
@@ -197,12 +309,12 @@ def generate_json(data):
     note_model_uuid = str(uuid.uuid5(NAMESPACE, "note_model_art_snob"))
     json_data["note_models"][0]["crowdanki_uuid"] = note_model_uuid
 
-    for image_url, author, name, description in data:
+    for image_url, author, name, description, url in data:
         unique_identifier = image_url  # Use the image URL as the unique identifier
         note_uuid = str(uuid.uuid5(NAMESPACE, unique_identifier))
         note = {
             "__type__": "Note",
-            "fields": [image_url, author, name, description],
+            "fields": [image_url, author, name, description, url],
             "guid": note_uuid[:10],  # Use the first 10 characters of the UUID
             "note_model_uuid": note_model_uuid,
             "tags": [],
@@ -235,9 +347,13 @@ def iter_next_page(url):
     Generator to iterate over pages starting from a given URL.
     Yields BeautifulSoup objects for each page with a 'Next page' link.
     """
+    headers = {
+        'User-Agent': 'ArtSnobAnkiBot/1.0 (https://github.com/histrio/anki-art-snob; me@false.org.ru) Python/requests'
+    }
     while url:
-        response = requests.get(url)
+        response = requests.get(url, headers=headers)
         if response.status_code != 200:
+            print(f"Failed to retrieve page: {url} (Status code: {response.status_code}) {response.text}")
             break  # Exit if there's an error loading the page
         soup = BeautifulSoup(response.content, "lxml")
         yield soup
@@ -253,6 +369,7 @@ def art_list():
     base_url = "https://ru.wikipedia.org"
     start_path = "/w/index.php?title=Категория:Картины_по_алфавиту"
     full_url = urljoin(base_url, start_path)
+    print(full_url)
 
     exlude_list = "|".join(
         [
@@ -274,9 +391,12 @@ def art_list():
 
 
 def get_data():
+    headers = {
+        'User-Agent': 'ArtSnobAnkiBot/1.0 (https://github.com/histrio/anki-art-snob; rinat@example.com) Python/requests'
+    }
     for link in art_list():
         print(link)
-        w_resp = requests.get(link, stream=False)
+        w_resp = requests.get(link, stream=False, headers=headers)
         w_soup = BeautifulSoup(w_resp.content, "lxml")
         box = w_soup.find("table", {"class": "infobox"})
         if box:
@@ -284,9 +404,10 @@ def get_data():
             if len(data) > 2:
                 _, author, name_ru = data[:3]
                 desc = " ".join(data[3:])
+                desc.replace("Медиафайлы на Викискладе","")
                 img_tag = box.find("img")
                 if img_tag:
                     img_url = "https:" + img_tag["src"]
-                    yield img_url, author, name_ru, desc
+                    yield img_url, author, name_ru, desc, link
                 else:
                     print("No image tag found")
